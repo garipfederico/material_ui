@@ -1,22 +1,19 @@
 import React from 'react'
-<<<<<<< Updated upstream
-import Button from '@material-ui/core/Button'
-=======
+
+// import Button from '@material-ui/core/Button'
+
 // import Button from '@material-ui/core/Button'
 //Son dos formas de importar distintas
-import { Button } from '@material-ui/core/'
+// import { Button } from '@material-ui/core/'
 import DeleteIcon from '@mui/icons-material/Delete';
-import { Icon, IconButton } from '@material-ui/core'
-
-
->>>>>>> Stashed changes
+import { Button, Icon, IconButton } from '@material-ui/core'
 
 function App() {
   return (
     <div>
-<<<<<<< Updated upstream
+
       <Button>Este es un boton</Button>
-=======
+
 
       <Button color="secondary">
         color
@@ -98,7 +95,6 @@ function App() {
      <IconButton aria-label="delete">
        <DeleteIcon></DeleteIcon>
      </IconButton>
->>>>>>> Stashed changes
     </div>
   );
 }
