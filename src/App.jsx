@@ -7,6 +7,7 @@ import React from 'react'
 // import { Button } from '@material-ui/core/'
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Button, Icon, IconButton } from '@material-ui/core'
+import Clase4 from './component/Clase4'
 
 function App() {
   return (
@@ -95,6 +96,7 @@ function App() {
      <IconButton aria-label="delete">
        <DeleteIcon></DeleteIcon>
      </IconButton>
+    <Clase4></Clase4>
     </div>
   );
 }
