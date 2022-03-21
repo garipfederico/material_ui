@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/styles'
 
@@ -20,6 +19,7 @@ const classes = useStyle()
 
     return (
         <div>
+        <p>Clase5</p>
             <Button
             className={classes.juanito}>
                 MI BOTON PERSONALIZADO
