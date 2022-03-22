@@ -6,15 +6,15 @@ import grey from '@material-ui/core/colors/grey';
 const theme = createTheme({
     
     palette: {
-        palette: {
-            primary: {
-              main: '#ef9a9a',
-            },
-            secondary: {
-              main: '#8bc34a',
-            },
-          
+        primary: {
+          main: purple[500],
+        },
+        secondary: {
+          main: grey[300],
+        },
+      },
+    
 
-    }}})
+})
 
 export default theme;
