@@ -14,6 +14,7 @@ import Clase5 from './component/Clase5'
 import Clase6 from './component/Clase6'
 import Clase7 from './component/Clase7'
 import Clase8 from './component/Clase8'
+import Clase9 from './component/Clase9'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Clase6 />
       <Clase7 />
       <Clase8 />
+      <Clase9 />
 
     </div>
   );
