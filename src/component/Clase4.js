@@ -7,7 +7,7 @@ export default class Clase4 extends Component {
         return (
             <div>
                 <p>Clase4</p>
-                <Typography variant="h1" color="primary">
+                <Typography variant="h3" color="primary">
                     Federico
                 </Typography>
                 <Typography variant="body1" align="center" color="secondary" gutterBottom >Lorem</Typography>
