@@ -9,7 +9,14 @@ import { makeStyles } from '@material-ui/core/styles'
 // useStyles
 
 const useStyles = makeStyles(theme => ({
-  offset: theme.mixins.Toolbar
+  offset: theme.mixins.Toolbar,// eliminar????
+
+// Aca hay codigo que no he puesto(no se porque) pero que recien aparece en el video 10 en el minuto 16:18
+
+  appBar: {
+    width: `calc(100% - ${240}px)`,
+    marginLeft: 240,
+  },
 }))
 
 const Navbar = () => {
@@ -18,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <AppBar >
+      <AppBar className={classes.appBar}>
         <Toolbar>
           <IconButton color='inherit'>
             <MenuIcon></MenuIcon>
