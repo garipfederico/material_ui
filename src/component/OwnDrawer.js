@@ -19,21 +19,24 @@ const estilos = makeStyles(theme => ({
     toolbar: theme.mixins.toolbar,
 }))
 
-const OwnDrawer = () => {
+const OwnDrawer = (props) => {
 
     const classes = estilos()
 
     return (
         <Drawer
             className={classes.drawer}
-            variant='permanent'
             classes={{
                 paper: classes.drawerPaper,
             }}
-            anchor='left'    >
+            anchor='left'
+            variant={props.variant}
+            open={props.open}
+            onClose={props.onClose ? props.onClose : null}
+            >
             <div className={classes.toolbar}></div>
             <Divider />
-            <Listas/>
+            <Listas />
         </Drawer>
     )
 }

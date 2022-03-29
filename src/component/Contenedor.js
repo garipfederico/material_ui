@@ -1,6 +1,7 @@
 import React from 'react'
 
 import {
+    Hidden,
     makeStyles
 } from '@material-ui/core'
 import Navbar from './Navbar'
@@ -15,19 +16,34 @@ const estilos = makeStyles(theme => ({
         flexGrow: 1,
         backgroundColor: theme.palette.background.default,
         padding: theme.spacing(3),
-      },
+    },
 }))
 
 const Contenedor = () => {
     const classes = estilos()
-
+    const [abrir, setAbrir] = React.useState(false)
+    const accionAbrir = () => {
+        setAbrir(!abrir);
+    };
     return (
         <div className={classes.root}>
             <Navbar />
-            <OwnDrawer />
+            <Hidden xsDown>
+                <OwnDrawer
+                    variant="permanent"
+                    open={true}
+                />
+            </Hidden>
+            <Hidden smUp>
+                <OwnDrawer
+                    variant="temporary"
+                    open={abrir}
+                    onClose={accionAbrir}
+                />
+            </Hidden>
             <div className={classes.content}>
                 <div className={classes.toolbar}></div>
-                Contenido
+                Contenido <button onClick={() => accionAbrir()}>Abrir</button>
             </div>
         </div>
     )

@@ -13,13 +13,24 @@ const useStyles = makeStyles(theme => ({
 
 // Aca hay codigo que no he puesto(no se porque) pero que recien aparece en el video 10 en el minuto 16:18
 
-  appBar: {
+menuButton: {
+   marginRight: theme.spacing(2),
+   [theme.breakpoints.up('sm')]: {
+     display: 'none',
+   },
+ },
+ title:{
+   flexGrow: 1
+ },
+appBar: {
+  [theme.breakpoints.up('sm')]: {
     width: `calc(100% - ${240}px)`,
     marginLeft: 240,
   },
+},
 }))
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const classes = useStyles()
 
@@ -27,7 +38,11 @@ const Navbar = () => {
     <div>
       <AppBar className={classes.appBar}>
         <Toolbar>
-          <IconButton color='inherit'>
+          <IconButton 
+              color='inherit' 
+              className={classes.menuButton}
+              onClick={() => props.accionAbrir()}
+              >
             <MenuIcon></MenuIcon>
           </IconButton>
           <Typography variant="h6">
@@ -40,8 +55,6 @@ const Navbar = () => {
     </div>
   )
 }
-
-
 
 export default Navbar
 
