@@ -6,6 +6,7 @@ import {
 } from '@material-ui/core'
 import Navbar from './Navbar'
 import OwnDrawer from './OwnDrawer'
+import Cajita from './Cajita'
 
 const estilos = makeStyles(theme => ({
     root: {
@@ -43,7 +44,7 @@ const Contenedor = () => {
             </Hidden>
             <div className={classes.content}>
                 <div className={classes.toolbar}></div>
-                Contenido <button onClick={() => accionAbrir()}>Abrir</button>
+                <Cajita/>
             </div>
         </div>
     )
