@@ -7,6 +7,7 @@ import {
 import Navbar from './Navbar'
 import OwnDrawer from './OwnDrawer'
 import Cajita from './Cajita'
+import CajitaGrid from './CajitaGrid'
 
 const estilos = makeStyles(theme => ({
     root: {
@@ -45,6 +46,7 @@ const Contenedor = () => {
             <div className={classes.content}>
                 <div className={classes.toolbar}></div>
                 <Cajita/>
+                <CajitaGrid/>
             </div>
         </div>
     )
