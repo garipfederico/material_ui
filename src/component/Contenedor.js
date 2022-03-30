@@ -29,7 +29,7 @@ const Contenedor = () => {
     };
     return (
         <div className={classes.root}>
-            <Navbar />
+            <Navbar accionAbrir={accionAbrir} />
             <Hidden xsDown>
                 <OwnDrawer
                     variant="permanent"
